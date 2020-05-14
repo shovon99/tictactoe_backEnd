@@ -15,7 +15,7 @@ int main()
     string pktinf = "";
     string crpt = "";
     string gbps ="";
-    string time = "";
+    string timeR = "";
 
 
     size_t gotPosition = Test.find("t");
@@ -49,7 +49,7 @@ int main()
 
     size_t timeStart = Test.find("ng");
     size_t timeStop = Test.rfind("sec");
-    time = Test.substr(timeStart+2, (timeStop-timeStart-2));
+    timeR = Test.substr(timeStart+2, (timeStop-timeStart-2));
 
   
   
@@ -57,7 +57,7 @@ int main()
     // ************************************************
     //Get Your Desired Value from Here !!!!!!!!!!!!!
 
-    cout<<pkts<<" "<<drops<<" "<<pktinf<<" "<<crpt<<" "<<gbps<<" "<<time<<endl;
+    cout<<pkts<<" "<<drops<<" "<<pktinf<<" "<<crpt<<" "<<gbps<<" "<<timeR<<endl;
 
 
     return 0;
